@@ -33,7 +33,7 @@ int solution(vector<string> friends, vector<string> gifts) {
         pair<string,string> cur = friendnames(gifts[i]);
         f[mp[cur.X]]++; // 선물을 준 사람 +1
         f[mp[cur.Y]]--; // 선물을 받은 사람 -1
-        arr[mp[cur.X]][mp[cur.Y]]++; //보낸사람 -> 받은사람 +1
+        arr[mp[cur.X]][mp[cur.Y]]++;
     }
     for(int i=0; i<n; i++){
         for(int j=0; j<n; j++){
@@ -46,9 +46,9 @@ int solution(vector<string> friends, vector<string> gifts) {
             }
         }
     }
-    int ans =0;
+    int answer =0;
     for(int i=0; i<n; i++){
-        if(getGifts[i]>ans)ans= getGifts[i]; // 가장 많이 선물을 받게 되는 사람의 개수를 찾음
+        if(getGifts[i] > answer)answer = getGifts[i]; // 가장 많이 선물을 받게 되는 사람의 개수를 찾음
     }
-    return ans;
+    return answer;
 }
