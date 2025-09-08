@@ -16,7 +16,7 @@ pair<string,string> friendnames(string gift){
             break;
         } //gift에서 공백 기준으로 나누기
     }
-    return {gift.substr(0,k),gift.substr(k+1,10)}; //공백 전은 주는 사람, 공백 후는 주는 사람 저장
+    return {gift.substr(0,k),gift.substr(k+1,10)}; //공백 전은 주는 사람, 공백 후는 받는 사람 저장
 }
 
 int solution(vector<string> friends, vector<string> gifts) {
