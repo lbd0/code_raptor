@@ -8,7 +8,7 @@ int solution(vector<int> scoville, int K) {
     int answer = 0;
 
     while(pq.top() < K) {
-        if(pq.size() < 2) //스코빌 지수를 K 이상으로 만들 수 없는 경우 = 음식 수가 부족한 경
+        if(pq.size() < 2) //스코빌 지수를 K 이상으로 만들 수 없는 경우 = 음식 수가 부족한 경우
             return -1;
 
         int first = pq.top(); // pq.top() = 가장 지수 낮은 음식
