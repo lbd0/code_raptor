@@ -1,5 +1,6 @@
 using System;
 
+
 public class Solution {
     public int solution(int[] array) {
         int maxFrequency = 0;         // 최빈값의 빈도 수
