@@ -27,7 +27,7 @@ string solution(string video_len, string pos, string op_start, string op_end, ve
     int op_e  = toSeconds(op_end); //오프닝 끝 시간 초 단위
 
     if (current >= op_s && current <= op_e) {
-        current = op_e; // 시작 위치가 오프닝이면 있으면 바로 오프닝 끝으로 이동
+        current = op_e; // 시작 위치가 오프닝이면 바로 오프닝 끝으로 이동
     }
 
     for (string a : commands) {
