@@ -23,7 +23,7 @@ int solution(vector<int> priorities, int location) {
         if(temp.second != pq.top()) // 우선순위가 더 높은 프로세스가 있다면
             q.push(temp); // 다시 넣기
         else
-            if(temp.first == location) { // location 프로세스가 우선순위가 가장 높다면 answer 1
+            if(temp.first == location) { // location 프로세스 실행순서에 answer에 count값 삽입
                 answer = count;
                 break;
             }
