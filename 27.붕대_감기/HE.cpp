@@ -12,11 +12,9 @@ int solution(vector<int> bandage, int health, vector<vector<int>> attacks) {
     for (t = 0; t <= attack; t++) {
         if (idx < attacks.size() && attacks[idx][0] == t) {
             health -= attacks[idx][1]; // 공격 받음
-            
-            if (health <= 0) return -1; // 죽음
-            
             suc = 0;
             idx++; // 다음 공격
+            if (health <= 0) return -1; // 죽음
         } else {
             health += bandage[1]; // 회복
             suc++;
