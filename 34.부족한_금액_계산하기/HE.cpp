@@ -6,7 +6,7 @@ long long solution(int price, int money, int count)
     
     for(int i = 1; i <= count; i++) answer += price * i;
     
-    answer = answer - money;
+    answer -= money;
     
     if(answer < 0) return 0;
     
