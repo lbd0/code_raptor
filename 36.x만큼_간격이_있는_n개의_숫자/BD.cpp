@@ -1,3 +1,4 @@
+// x만큼 간격이 있는 n개의 숫자  
 #include <string>
 #include <vector>
 
@@ -8,7 +9,7 @@ vector<long long> solution(int x, int n) {
      
     for(int i=1; i<=n; ++i)
     {
-        answer.emplace_back(x*i);
+        answer.emplace_back(x*i);    
     }
     
     return answer;
